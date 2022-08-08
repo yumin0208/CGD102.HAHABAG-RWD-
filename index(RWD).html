@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAHABAG</title>
+    <link rel="shortcut icon" href="./image/logo.svg">
+    <link rel="bookmark" href="./image/logo.svg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu_hb">
+    <header class="menu">
+        <!-- 導覽列+logo -->
+        <nav class="menu_nav">
+            <ul>
+                <li><a href="#">最新商品</a></li>
+                <li><a href="#">口金零錢包</a></li>
+                <li><a href="ˇ">口金皮夾</a></li>
+                <li ><a href="index(RWD).html" class="logo"><img src="./image/logo1.svg" alt="logo"></a></li>
+                <li><a href="#">口金斜背包</a></li>
+                <li ><a href="#">客製包包</a></li>
+                <li><a href="#">品牌介紹</a></li>
+            </ul>
+        </nav>
+        <!-- 會員登入+購物車iocn -->
+        <div class="sign_in_icon">
+            <a href="#"><span class="material-symbols-rounded">
+                shopping_cart</span></a>
+                
+            <a href="#"><span class="material-symbols-rounded">
+                account_circle</span></a>   
+        </div>
+        <!-- 手機版logo -->
+        <div class="logo_rwd">
+            <a href="index.html" class=""><img src="./image/logo1.svg" alt="logo"></a>
+        </div>
+        <!-- 漢堡選單 -->
+        <label for="menu_hb" class="menu_hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- 漢堡選單連結 -->
+        <ul class="menu_hb_link">
+            <li><a href="#">最新商品</a></li>
+            <li><a href="#">口金零錢包</a></li>
+            <li><a href="#">口金皮夾</a></li>
+            <li><a href="#">口金斜背包</a></li>
+            <li><a href="#">客製包包</a></li>
+            <li><a href="#">品牌介紹</a></li>
+            <li><a href="#">會員登入</a></li>
+            <li><a href="#">購物車</a></li>
+        </ul>
+        
+    </header>
+    <!-- ===============banner圖============== -->
+
+    <!--<section class="wrap_banner">
+        <div class="banner_picture">
+            <img src="./image/banner.jpg" alt="首頁圖片">
+        </div>
+    </section>
+    
+
+    ===============最新商品(輪播)==============
+    <section class="wrap_new_product">
+        <div class="new_product_group">
+            <h2 class="new_paper_tape">最新商品</h2>
+            <p>抓住夏天的尾巴！<br>
+            在過完了溫馨又溫柔的五月天之後<br>
+            準備好迎接台灣獨特的熱情初夏...</p>
+            <div class="new_product_list">
+                <div class="new_product_items">
+                    <div class="new_product_items_picture">
+                        <img src="./image/bag1.png" alt="口金包">
+                    </div>
+                    <div class="new_product_items_text">
+                        <h3>小獅子零錢包</h3>
+                        <p>材質:100% 棉</p>
+                        <p>尺寸:長 14 x 寬 20 cm</p>
+                        <p>功能:收納硬幣</p>
+                        <p class="price">NT$1490</p>
+                    </div>
+                </div>
+                <div class="new_product_items">
+                    <div class="new_product_items_picture">
+                        <img src="./image/bag2.png" alt="口金包">
+                    </div>
+                    <div class="new_product_items_text">
+                        <h3>熊貓零錢包</h3>
+                        <p>材質:100% 棉</p>
+                        <p>尺寸:長 14 x 寬 20 cm</p>
+                        <p>功能:收納硬幣</p>
+                        <p class="price">NT$1490</p>
+                    </div>
+                </div>
+                <div class="new_product_items">
+                    <div class="new_product_items_picture">
+                        <img src="./image/bag3.png" alt="口金包">
+                    </div>
+                    <div class="new_product_items_text">
+                        <h3>塗鴉系列零錢包</h3>
+                        <p>材質:100% 棉</p>
+                        <p>尺寸:長 14 x 寬 20 cm</p>
+                        <p>功能:收納硬幣</p>
+                        <p class="price">NT$1490</p>
+                    </div>
+                </div>
+                <!-- <div class="new_product_items">
+                    <div class="new_product_items_picture">
+                        <img src="./image/bag4.png" alt="口金包">
+                    </div>
+                    <div class="new_product_items_text">
+                        <h3>繽紛系列零錢包</h3>
+                        <p>材質:100% 棉</p>
+                        <p>尺寸:長 14 x 寬 20 cm</p>
+                        <p>功能:收納硬幣</p>
+                        <p class="price">NT$1490</p>
+                    </div>
+                </div> -->
+            <!-- </div>
+            <div class="more">
+                <a href="newItems.html">更多商品</a>
+            </div>  
+        </div>
+    </section> 
+
+     ==============商品介紹============== -->
+    <!-- <section class="wrap_product_introduction">
+        <div class="product_introduction_ellipse">
+            <h2 class="product_introduction_title">商品介紹</h2>
+        </div>                
+        <div class="product_introduction_group container">
+            <div class="product_title">
+                <p class="product_text">將日本傳統工藝的布料作為材料，結合口金包，從而賦予新生命，讓美的傳統更貼近生活時尚。所有的材料(包括布料、口金)，堅持選用日本職人們製作，最後運用自己的設計，加以重現傳統美學並賦予新生命。目前的設計包括了零錢包、皮夾、斜背包等，皆是使用日本製布料，發揮創意重新設計製作的作品。一針一線的手縫口金更牢固也更有溫度，堅持使用日本進口並賦予每塊布料獨特的名字與故事從剪裁到打版不斷改良設計出我們自己也滿意的包款我們不像機器那樣的冰冷我們有情緒﹑有溫度
+                每個手作的痕跡，都是情感的證明。</p>
+                <div class="product_items row">
+                    零錢包--------
+                    <div class="product_items_coin col-12 col-md-4">
+                        <div class="product_items_picture">
+                            <img src="./image/bag5.jpg" alt="零錢包圖">
+                        </div>
+                        <div class="product_text_coin">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <img src="" alt="">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_items_coin col-12 col-md-4">
+                        <div class="product_picture">
+                            <img src="./image/bag6.jpg" alt="零錢包圖">
+                        </div>
+                        <div class="product_text_coin">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <img src="" alt="">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_items_coin col-12 col-md-4">
+                        <div class="product_picture"><img src="./image/bag7.jpg" alt="零錢包圖"></div>
+                        <div class="product_text_coin">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <img src="" alt="">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                    皮夾-----------
+                    <div class="product_items_wallet col-12 col-md-4">
+                        <div class="product_picture">
+                            <img src="./image/bag8.jpg" alt="皮夾圖">
+                        </div>
+                        <div class="product_text_wallet">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <img src="" alt="">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_items_wallet col-12 col-md-4">
+                        <div class="product_picture">
+                            <img src="./image/bag9.jpg" alt="皮夾圖">
+                        </div>
+                        <div class="product_text_wallet">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <img src="" alt="">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_items_wallet col-12 col-md-4">
+                        <div class="product_picture">
+                            <img src="./image/bag10.jpg" alt="皮夾圖">
+                        </div>
+                        <div class="product_text_wallet">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <img src="" alt="">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                     斜背包------------------ -->
+                    <!-- <div class="product_items_bag col-12 col-md-4">
+                        <div class="product_picture">
+                            <img src="./image/bag11.jpg" alt="斜背包">
+                        </div>
+                        <div class="product_text_bag">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_items_bag col-12 col-md-4">
+                        <div class="product_picture"><img src="./image/bag12.jpg" alt="斜背包"></div>
+                        <div class="product_text-bag">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <img src="" alt="">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_items_bag col-12 col-md-4">
+                        <div class="product_picture"><img src="./image/bag13.jpg" alt="斜背包"></div>
+                        <div class="product_text_bag">
+                            <h4>墨茜虛實植物染口金包</h4>
+                            <p>尺寸:長 14 x 寬 20 cm</p>
+                            <p>材質:100% 棉</p>
+                            <p>顏色:黑色</p>
+                            <div class="price">
+                                <img src="" alt="">
+                                <span>NT$1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> --> 
+                <!-- <div class="more">
+                    <a href="coinPurse.html">更多商品</a>
+                </div>
+            </div>    
+        </div>
+            
+        </div>
+    </section>
+
+     ==============客製商品================ -->
+    <!-- <section class="wrap_custom_made">
+        <div class="custom_made_group container">
+            <div class="custom_made_bag row">
+                <h2 class="custom_paper_tape">客製包包</h2>
+                <div class="custom_items ">
+                    <div class="custom_made_text">
+                        <h3>讓我們幫您做出心目中的口金包</h3>
+                        <p>可以自由選取不同的版型、布料、口金尺寸，甚至可以加上刺繡的圖樣，打造出個人專屬包款。</p>
+                        <p>支付客製包款的訂金後，師傅便會著手製作屬於您的客製包包，製作時間約30至45個工作天，實際製作時間以當時接單情況為準，若提前完成就會提前寄出喔。</p>
+                        <div class="more">
+                            <a href="custom.html">開始訂製</a>
+                        </div>                          
+                    </div>
+                    <div class="custom_made_picture"><img src="./image/bag15.jpg" alt="客製包包"></div>
+                </div>
+            </div>
+        </div>
+        <div class="background"></div>
+    </section> -->
+
+    <!-- =========品牌介紹&店鋪位置============ -->
+    <!-- <section class="wrap_brand">
+        <div class="brand">
+            <div class="brand_picture">
+                <img src="./image/bag16.jpg" alt="品牌照片">
+            </div>
+            <div class="brand_title">
+                <h2>品牌介紹</h2>
+            </div>
+        </div>
+        <div class="shop">
+            <div class="shop_title">
+                <h2>店舖位置</h2>
+            </div>
+            <div class="shop_picture">
+                <img src="./image/bag17.jpg" alt="店鋪照片">
+            </div>
+        </div>
+    </section> --> -->
+    <!-- 頁尾============= -->
+    <footer>
+        <!-- ---------logo跟品牌社群-------------- -->
+        <!-- <div class="footer_picture">
+            <div class="logo">
+                <a href="#"><img src="./image/logo.svg" alt="logo"></a>
+            </div>
+            <div class="community">
+                <h5>HA HA BAG</h5>
+                <div class="community_icon">
+                    <a href="#"><img src="./image/Twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="./image/Facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="./image/Instagram.svg" alt="instagram"></a>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- ------------次要選單-------------- -->
+        <!-- <div class="footer-text">
+            <ul class="about">
+                <li><h5>關於我們</h5></li>
+                <li><a href="#">商店簡介</a></li>
+                <li><a href="#">聯絡我們</a></li>
+                <li><a href="#">隱私權及網站使用條款</a></li>
+            </ul>    
+
+            <ul class="shopping">
+                <li><h5>購物</h5></li>
+                <li><a href="#">如何購買</a></li>
+                <li><a href="#">配送服務</a></li>
+                <li><a href="ˇ">付款方式</a></li>
+            </ul>    
+
+            <ul class="member">
+                <li><h5>會員</h5></li>
+                <li><a href="#">我的帳戶</a></li>
+                <li><a href="#">會員制度</a></li>
+                <li><a href="#">贈品兌換</a></li>
+            </ul>
+
+            <ul class="help">
+                <li><h5>幫助</h5></li>
+                <li><a href="">常見問答</a></li>
+                <li><a href="">售後服務</a></li>
+                <li><a href="">包裹查詢</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyright"></div>  -->
+</body>
+</html>
