@@ -1,0 +1,181 @@
+:root{
+    --nav-color:#4369B4;
+    --bg1-color:#7190cd;
+    --bg2-color:#0057A7;
+    --text-color:#404040;
+    --main-color:#ffd54c;
+    --main2-color:#0945ba;
+    --main3-color:#ffe5fb;
+}
+/* 手機版設定 */
+    .menu{
+        width: 100%;
+        background-color: var(--nav-color);
+        height: 50px;
+        box-shadow: 0 2px 5px 2px rgba(41, 42, 137, 0.3);
+        position: fixed;
+        z-index: 1;
+    }
+    /* 平板以上導覽列與會員登入icon隱藏 */
+    .menu_nav,.sign_in_icon{
+        display: none;
+    }
+    /* checkbox隱藏 */
+    #menu_hb{
+        display: none;}
+     /* 手機版置中logo */
+     .logo_rwd{
+        width: 100%;
+    }
+    .logo_rwd a{
+        display: block;
+        width: 75px;
+        height: 75px;
+        position: relative;
+        margin: auto;
+        z-index: 10;
+    }
+    .logo_rwd img{
+        width:100%;
+        height: 100%;
+        vertical-align: top;
+        margin-top: 7px;
+    }
+    /* 漢堡選單 */
+    /* 漢堡按鈕 */
+    .menu_hb{
+        width: 40px;
+        height: 40px;
+        background-color: #0057A7;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        top: -140%;
+        right:0;
+        left: 0;
+        margin-left: auto;
+        z-index: 3;
+    }    
+    .menu_hb span{
+        width: 30px;
+        height: 2px;
+        background-color: var(--main-color);
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu_hb span:nth-child(1){
+        top: 9px;
+        transform: rotate(0deg);
+        transition: top 1s 1s,transform 1s 0s;
+    }
+    #menu_hb:checked ~ .menu .menu_hb span:nth-child(1){
+        top: 19px;
+        transition: 1s;
+        transform: rotate(45deg);
+        transition: top 1s 1s,transform 1s 2s;
+    }
+    .menu_hb span:nth-child(2){
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 1;
+        transition: 1s;
+    }
+    #menu_hb:checked ~ .menu .menu_hb span:nth-child(2){
+        opacity: 0;
+        transition: 1s;
+    }
+
+
+    .menu_hb span:nth-child(3){
+        bottom: 9px;
+        transform: rotate(0deg);
+        transition: bottom 1s 1s,transform 1s 0s;
+    }
+      
+    #menu_hb:checked ~ .menu .menu_hb span:nth-child(3){
+        bottom: 19px;
+        transform: rotate(-45deg);
+        transition: bottom 1s 1s,transform 1s 2s;
+    }
+
+    .menu_hb_link{
+        display: none;
+        position: absolute;
+        z-index: 0;
+        top: 50px;
+        width: 100%;
+        background-color:var(--main-color)
+    }
+    .menu_hb_link a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        display: inline-block;
+        padding: 10px;
+    }
+    .menu_hb_link li{
+        border-bottom: 1px solid black;
+    }
+    #menu_hb:checked ~ .menu .menu_hb_link{
+        display: block;
+    } 
+
+@media screen and (max-width: 767px){
+    
+    
+}
+@media screen and (min-width: 768px){
+   
+}
+@media screen and (min-width: 1024px){
+
+    .menu_nav{
+        display: flex;
+        justify-content: center;
+    }
+    .menu_nav ul{
+        display: flex;
+        margin: auto;
+    }
+    .menu_nav ul li a{
+        display: block;
+        padding: 7px 20px ;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px gray;
+        font-size: 18px;
+        line-height: 36px;
+        color: #fff;
+    }
+    .logo{
+        width: 80px;
+    }
+    .logo img{
+        width: 100%;
+        vertical-align: top;
+    }
+    .sign_in_icon{
+        display: block;
+        margin: 0 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .material-symbols-rounded{
+        color: #fff;
+        vertical-align: top;
+        margin: 13px 0;
+    }
+    /* 手機版logo隱藏 */
+    .logo_rwd{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    
+}
