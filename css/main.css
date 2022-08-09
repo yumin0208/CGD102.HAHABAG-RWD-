@@ -8,6 +8,7 @@
     --main3-color:#ffe5fb;
 }
 /* 共用設定 */
+/* header-----導覽列的藍色底 */
     .menu{
         width: 100%;
         background-color: var(--nav-color);
@@ -16,10 +17,89 @@
         position: fixed;
         z-index: 1;
     }
-/* checkbox隱藏 */
+/* header-----checkbox隱藏 */
     #menu_hb{
         display: none;}
+/* banner圖輪播 */
+    .banner_slider{
+        width: 100%;
+        position: relative;
+        top: 50px;
+        overflow: hidden;
+    }
 
+    .banner_picture_items{
+        /* display: none; */
+        vertical-align: top;
+        width: 100%;
+    }
+  
+    .banner_picture_items img{
+        width: 100%;
+        height: 100%;
+        object-fit: center;
+        object-position: center;
+    }
+    /* banner的左右<>按鈕 */
+    .pre, .next{
+        position: absolute;
+        bottom: 50%;
+        width: auto;
+        cursor: pointer;
+        padding: 10px 10px;
+        color: var(--bg2-color);
+        font-weight: 900;
+        font-size: 30px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        text-decoration: none;
+    }
+    .pre{
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+        border-radius: 3px 0 0 3px;
+    }
+    .pre:hover, .next:hover{
+        background-color:rgb(255,229,251,.5);
+    }
+    /* banner下方的點點按鈕 */  
+    .banner_slider_dot{
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    } 
+
+    .banner_slider_dot .dot{
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 10px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #bebebe;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active,.banner_slider_dot span:hover{
+        background-color: #2a2a2a;
+    }
+    /* 圖片淡入 */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      .disable {
+        display: none;
+    }
+  
+   
 /* 導覽列--平板直向以下 */
     @media screen and (max-width: 1023px){
         /* 平板橫向以下導覽列與會員登入icon隱藏 */
@@ -49,7 +129,6 @@
         .menu_hb{
             width: 40px;
             height: 40px;
-            /* background-color: #0057A7; */
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -135,7 +214,8 @@
         }
         #menu_hb:checked ~ .menu .menu_hb_link{
             display: block;
-        }    
+        } 
+        
     }
     
 /* 導覽列----平板橫向以上 */
@@ -158,7 +238,7 @@
         padding: 7px 20px ;
         text-decoration: none;
         text-shadow: 1px 1px 1px gray;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 36px;
         color: #fff;
     }
@@ -184,7 +264,7 @@
         vertical-align: top;
         margin: 13px 0;
     }
-    
+  
 }
 @media screen and (min-width: 1200px){
     
