@@ -6,102 +6,62 @@
     --main-color:#ffd54c;
     --main2-color:#0945ba;
     --main3-color:#ffe5fb;
+    --main4-color:#FFEF00;   
 }
+/* 背景漸層 */
+/* body{
+    width: 100%;
+    background-image: linear-gradient(to bottom, #fff5fe, #E1F6FF, #FFF2FD);   
+} */
 /* 共用設定 */
+/* ===============導覽列共用設定================= */
 /* header-----導覽列的藍色底 */
     .menu{
         width: 100%;
         background-color: var(--nav-color);
         height: 50px;
-        box-shadow: 0 2px 5px 2px rgba(41, 42, 137, 0.3);
+        box-shadow: 0 0 15px 2px rgb(39, 50, 105);
         position: fixed;
-        z-index: 1;
+        z-index: 10;
     }
 /* header-----checkbox隱藏 */
     #menu_hb{
         display: none;}
-/* banner圖輪播 */
-    .banner_slider{
-        width: 100%;
-        position: relative;
-        top: 50px;
-        overflow: hidden;
-    }
 
-    .banner_picture_items{
-        /* display: none; */
-        vertical-align: top;
-        width: 100%;
-    }
-  
-    .banner_picture_items img{
-        width: 100%;
-        height: 100%;
-        object-fit: center;
-        object-position: center;
-    }
-    /* banner的左右<>按鈕 */
-    .pre, .next{
-        position: absolute;
-        bottom: 50%;
-        width: auto;
-        cursor: pointer;
-        padding: 10px 10px;
-        color: var(--bg2-color);
-        font-weight: 900;
-        font-size: 30px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        text-decoration: none;
-    }
-    .pre{
-        left: 10px;
-    }
-    .next {
-        right: 10px;
-        border-radius: 3px 0 0 3px;
-    }
-    .pre:hover, .next:hover{
-        background-color:rgb(255,229,251,.5);
-    }
-    /* banner下方的點點按鈕 */  
-    .banner_slider_dot{
-        text-align: center;
-        position: relative;
-        z-index: 1;
-    } 
-
-    .banner_slider_dot .dot{
-        display: inline-block;
-        cursor: pointer;
-        margin: 0 10px;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #bebebe;
-        transition: background-color 0.6s ease;
-    }
-    
-    .active,.banner_slider_dot span:hover{
-        background-color: #2a2a2a;
-    }
-    /* 圖片淡入 */
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-      
-      @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-      .disable {
-        display: none;
-    }
-  
-   
+/* 更多商品按鈕 */
+.more{
+    text-align: center;
+}
+.more a{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px dashed var(--main2-color);
+    box-shadow: 0 0 0 3px var(--main4-color);
+    background-color: var(--main4-color);
+    color: var(--main2-color);
+    font-size: clamp(16px, calc((100vw - 414px) / 393.000 + 16px), 18px);
+}  
+/* ===============頁尾共用設定================= */
+footer{
+    width: 100%;
+    background-color:var(--nav-color);
+}
+.footer_content{
+    height: clamp(80px, calc((100vw - 414px) / 11.229 + 80px), 150px);
+    display: flex;
+    align-items: center;
+}
+.footer_picture .logo{
+    vertical-align: top;
+    text-align: center;
+}
+.footer_picture .logo img{
+    vertical-align: top;
+}
+/* ===============導覽列================= */
 /* 導覽列--平板直向以下 */
-    @media screen and (max-width: 1023px){
+    @media screen and (max-width: 1024px){
         /* 平板橫向以下導覽列與會員登入icon隱藏 */
         .menu_nav,.sign_in_icon{
             display: none;
@@ -214,58 +174,155 @@
         }
         #menu_hb:checked ~ .menu .menu_hb_link{
             display: block;
-        } 
-        
+        }  
     }
     
 /* 導覽列----平板橫向以上 */
-@media screen and (min-width: 1024px){
-    /* 手機版logo隱藏 */
-    .logo_rwd, .menu_hb_link{
+    @media screen and (min-width: 1024px){
+        /* 手機版logo隱藏 */
+        .logo_rwd, .menu_hb_link{
+            display: none;
+        }
+
+        .menu_nav{
+            display: flex;
+            justify-content: center;
+        }
+        .menu_nav ul{
+            display: flex;
+            margin: auto;
+        }
+        .menu_nav ul li a{
+            display: block;
+            padding: 7px 20px ;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px gray;
+            font-size: 16px;
+            line-height: 36px;
+            color: #fff;
+        }
+        .menu_nav ul li a:hover{
+            color: var(--main-color);
+        }
+        .logo{
+            width: 80px;
+        }
+        .logo img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .sign_in_icon{
+            display: block;
+            margin: 0 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .material-symbols-rounded{
+            color: #fff;
+            vertical-align: top;
+            margin: 13px 0;
+        } 
+    }
+/* ===============頁尾================= */
+/* 頁尾--手機版 */
+@media screen and (max-width: 767px){
+    .footer_picture{
+        display: flex;
+        width: 100%;        
+    }
+    .footer_picture .logo img{
+        width: 33%;
+    }
+    .community h5 {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 600; 
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .community_icon {
+        text-align: center;
+    } 
+    .community_icon img{
+        vertical-align: top;
+        width: 20%;
+    } 
+    .footer_text ul {
         display: none;
     }
-
-    .menu_nav{
+    .footer_txt{
         display: flex;
-        justify-content: center;
     }
-    .menu_nav ul{
+    .footer_txt li a{
+        display: inline-block;
+        color: #fff;
+        font-size: 13px;
+        padding: 5px;
+        letter-spacing: 3px;
+        line-height: 20px;
+    }
+}
+/* 頁尾--平板直向 */
+@media screen and (min-width: 768px){
+    .footer_content{
+        justify-content: center;
+        
+    }
+    .footer_picture{
         display: flex;
+        /* width: 300px; */
+        justify-content: space-between;
+    }
+    .footer_picture .logo img{
+        width: 60%;
+    } 
+    /* 標題與社群icon---------------- */
+    .community {
         margin: auto;
     }
-    .menu_nav ul li a{
-        display: block;
-        padding: 7px 20px ;
-        text-decoration: none;
-        text-shadow: 1px 1px 1px gray;
+    .community h5 {
         font-size: 16px;
-        line-height: 36px;
-        color: #fff;
+        color: #ffffff;
+        font-weight: 600; 
+        text-align: center;
+        margin-bottom: 10px;
     }
-    .menu_nav ul li a:hover{
-        color: var(--main-color);
-    }
-    .logo{
-        width: 80px;
-    }
-    .logo img{
-        width: 100%;
+    .community_icon {
+        text-align: center;
+    } 
+    .community_icon img{
         vertical-align: top;
+        padding:5px;
+    } 
+    /* 次要選單----------------- */
+    .footer_text {
+        display: flex;
     }
-    .sign_in_icon{
-        display: block;
-        margin: 0 20px;
-        position: absolute;
-        top: 0;
-        right: 0;
+
+    .footer_text ul {
+        padding: 0 5px;
     }
-    .material-symbols-rounded{
-        color: #fff;
-        vertical-align: top;
-        margin: 13px 0;
+    .footer_text ul li{
+        padding: 3px 15px;
     }
-  
+    .footer_text ul li h5{
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: 600; 
+    }
+    .footer_text ul li a{
+        font-size: 13px; 
+        color: #ffffff;
+        text-decoration: none;
+    } 
+    .footer_txt{
+        display: none;
+    }
 }
-@media screen and (min-width: 1200px){
-    
+/* 頁尾---平板橫向1024以上 */
+@media screen and (min-width: 1024px){
+    .footer_picture .logo img{
+        width: 95%;
+    } 
 }

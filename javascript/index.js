@@ -51,4 +51,35 @@ function onResize() {
 
 onResize();
 
+// ================================
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+      items:4,
+      loop:true,
+      margin:25,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      nav: true,
+      responsive:{
+    0:{
+      items:1
+      },
+  768:{
+      items:2
+      },
+  1024:{
+      items:4
+      },
+  1200:{
+      items:5
+      }
+  }
+  });
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    })
 
