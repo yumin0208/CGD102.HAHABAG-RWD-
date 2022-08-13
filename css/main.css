@@ -61,7 +61,7 @@ footer{
 }
 /* ===============導覽列================= */
 /* 導覽列--平板直向以下 */
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1023px){
         /* 平板橫向以下導覽列與會員登入icon隱藏 */
         .menu_nav,.sign_in_icon{
             display: none;

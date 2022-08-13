@@ -63,10 +63,10 @@ onResize();
       nav: true,
       responsive:{
     0:{
-      items:1
+      items:2
       },
   768:{
-      items:2
+      items:3
       },
   1024:{
       items:4
@@ -83,3 +83,10 @@ onResize();
         owl.trigger('stop.owl.autoplay')
     })
 
+    //====================
+
+    VanillaTilt.init(document.querySelectorAll(".product_items_bag"), {
+      max: 25,
+      speed: 400,
+      glare:true
+    });
