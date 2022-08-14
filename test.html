@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/owl/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.css">
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+
+        .new_product_list{
+            width: 100%;
+        }
+
+        
+        .new_product_items{
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            background-color: #4DC7A0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="new_product_list owl-carousel owl-theme">
+        <div class="new_product_items">
+            <div class="new_product_items_picture">
+                <a href=""><img src="./image/bag1.jpg" alt="口金包"> </a>
+            </div>
+            <div class="new_product_items_text">
+                <h3>小獅子零錢包</h3>
+                <p>材質:100% 棉</p>
+                <p>尺寸:長 14 x 寬 20 cm</p>
+                <p>功能:收納硬幣</p>
+                <p class="price">NT$1,180</p>
+            </div>
+        </div>
+        <div class="new_product_items">
+            <div class="new_product_items_picture">
+                <a href=""><img src="./image/bag1.jpg" alt="口金包"> </a>
+            </div>
+            <div class="new_product_items_text">
+                <h3>小獅子零錢包</h3>
+                <p>材質:100% 棉</p>
+                <p>尺寸:長 14 x 寬 20 cm</p>
+                <p>功能:收納硬幣</p>
+                <p class="price">NT$1,180</p>
+            </div>
+        </div>
+        <div class="new_product_items">
+            <div class="new_product_items_picture">
+                <a href=""><img src="./image/bag1.jpg" alt="口金包"> </a>
+            </div>
+            <div class="new_product_items_text">
+                <h3>小獅子零錢包</h3>
+                <p>材質:100% 棉</p>
+                <p>尺寸:長 14 x 寬 20 cm</p>
+                <p>功能:收納硬幣</p>
+                <p class="price">NT$1,180</p>
+            </div>
+        </div>
+        <div class="new_product_items">
+            <div class="new_product_items_picture">
+                <a href=""><img src="./image/bag1.jpg" alt="口金包"> </a>
+            </div>
+            <div class="new_product_items_text">
+                <h3>小獅子零錢包</h3>
+                <p>材質:100% 棉</p>
+                <p>尺寸:長 14 x 寬 20 cm</p>
+                <p>功能:收納硬幣</p>
+                <p class="price">NT$1,180</p>
+            </div>
+        </div>
+        <div class="new_product_items">
+            <div class="new_product_items_picture">
+                <a href=""><img src="./image/bag1.jpg" alt="口金包"> </a>
+            </div>
+            <div class="new_product_items_text">
+                <h3>小獅子零錢包</h3>
+                <p>材質:100% 棉</p>
+                <p>尺寸:長 14 x 寬 20 cm</p>
+                <p>功能:收納硬幣</p>
+                <p class="price">NT$1,180</p>
+            </div>
+        </div>
+        <div class="new_product_items">
+            <div class="new_product_items_picture">
+                <a href=""><img src="./image/bag1.jpg" alt="口金包"> </a>
+            </div>
+            <div class="new_product_items_text">
+                <h3>小獅子零錢包</h3>
+                <p>材質:100% 棉</p>
+                <p>尺寸:長 14 x 寬 20 cm</p>
+                <p>功能:收納硬幣</p>
+                <p class="price">NT$1,180</p>
+            </div>
+        </div>
+        <div class="new_product_items">
+            <div class="new_product_items_picture">
+                <a href=""><img src="./image/bag1.jpg" alt="口金包"> </a>
+            </div>
+            <div class="new_product_items_text">
+                <h3>小獅子零錢包</h3>
+                <p>材質:100% 棉</p>
+                <p>尺寸:長 14 x 寬 20 cm</p>
+                <p>功能:收納硬幣</p>
+                <p class="price">NT$1,180</p>
+            </div>
+        </div>
+        <div class="new_product_items">
+            <div class="new_product_items_picture">
+                <a href=""><img src="./image/bag1.jpg" alt="口金包"> </a>
+            </div>
+            <div class="new_product_items_text">
+                <h3>小獅子零錢包</h3>
+                <p>材質:100% 棉</p>
+                <p>尺寸:長 14 x 寬 20 cm</p>
+                <p>功能:收納硬幣</p>
+                <p class="price">NT$1,180</p>
+            </div>
+        </div>
+        
+    </div>
+        <script>
+            var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:4,
+            loop:true,
+            margin:25,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
+            nav: true,
+            responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        1024:{
+            items:4
+        },
+        1200:{
+            items:5
+        }
+    }
+        });
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+        </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* 網頁內容--------------- */
+
+section {
+    width: 100%;
+}
+
+/* ===========零錢包商品============= */
+/* 第一區塊======= */
+.coin_purse{
+    overflow: hidden;
+    padding: 150px 0;
+}
+
+.banner_group{
+    width: 75%;
+    max-width: 1200px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid #0945BA;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 6px 6px 0 0 #0945BA;
+}
+/* 文字-------------- */
+.banner_txt{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: #ffff;
+    border-radius: 27px 0 0 27px;
+}
+.banner_txt span{
+    display: inline-block;
+    background-color: #0945BA;
+    color: #FFD54C;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+.banner_txt_title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #0945BA;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.banner_txt p{
+    font-size: 16px;
+    color: #404040;
+    line-height: 32px;
+}
+
+/* 圖片------------ */
+.banner_picture{
+   width: 50%;
+   overflow: hidden;
+    
+}
+.banner_picture img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0 27px 27px 0;
+}
+/* 背景黃色四角形背景 */
+.banner_rectangle{
+    background-color:#FFD54C ;
+    width: 100%;
+    height: 1200px;
+    clip-path: polygon(100% 10%,100% 30%,-20% 50%, -30% 40% );
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+}
+/* 第二區塊--------------- */
+/* 上方頁籤方塊 */
+.label_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label_box_coin{
+    width: 18%;
+    height: 100px;
+    border-bottom: 2px solid #0945BA;
+    box-sizing: border-box;
+}
+.label_box_wallet{
+    width: 12%;
+    height: 100px;
+    border: 2px solid #0945BA;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+    background-color: #FFD54C;
+    box-shadow: 3px 0px 0 0 #2c72ff;
+}
+.label_box_wallet p{
+    color: #0945BA;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.label_box_bag{
+    width: 70%;
+    height: 100px;
+    border-bottom: 2px solid #0945BA;
+    box-sizing: border-box;
+    position: relative;
+}
+.label_box_bag::before{
+    content: '口金皮夾';
+    color: #79a3ff;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    width: 16%;
+    height: 98%;
+    border: 2px solid #b8cfff;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    left: 3px;
+}
+.label_box_bag::after{
+    content: '口金斜背包';
+    color: #79a3ff;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    width: 16%;
+    height: 98%;
+    border: 2px solid #b8cfff;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    left: 176px;
+}
+/* 商品區塊 */
+.product_group{
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 300px ;
+}
+.product_group h3 {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #0945BA;
+    font-weight: 800;
+    padding: 80px 0 30px 0;
+}
+.product_items_group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.product_items_octagon{
+    width: 275px;
+    background-color: #FFE5FB;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-bottom: 50px;
+    box-shadow:2px 2px 5px 0px #FFD54C;
+}
+.product_items_picture{
+    width: 96%;
+    margin: auto;
+    clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.product_items_picture img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+}
+.product_items_txt p{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #606060;
+}
+.product_items_txt .price{
+    font-size: 18px;
+    font-weight: 800;
+    color: #0945BA;
+    padding-bottom:20px; 
+}
+/* 第三區塊----------- */
